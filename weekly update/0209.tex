@@ -1,0 +1,38 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage[margin=2cm]{geometry}
+\usepackage{hyperref}
+\usepackage{indentfirst}
+\usepackage{setspace}
+\doublespacing
+\title{Stat222: Weekly Update}
+\author{Hui-Fang Ko, Hsin-Wei Tsao}
+\date{Feb 9, 2014}
+\begin{document}
+\maketitle
+This week, we thought about our model in detail and tried to collect data we need.
+\section*{The Models We Intend to Build}
+As we mentioned in the proposal, we are going to build a model to evaluate restaurants. There are few methods we wll use:
+\begin{enumerate}
+\item Linear Regression: We set the customers review score on Yelp as the response variable, and explanatory variables are restaurant score by Public Health Department, area crimal rate, housing price, numbers of reviews, texts in reviews, wifi, price rate, hours, take credit card or not.
+\item Clustering: Use the same variables as above. 
+\item RFM Model: apply the RFM Model to analysis customers' reviews on yelp. The elements we will use are: 
+\begin{itemize}
+\item Recency - How recently did the customer post review?
+\item Frequency - How often do they post?
+\item Monetary Value - How many texts in reviews?
+\end{itemize}
+
+\end{enumerate}
+
+
+\section*{Data We Need}
+\begin{enumerate}
+\item Yelp API: customers' reviews(including scores and texts), wifi available, price rate, hours, take credit, zipcode. 
+\item Restaurant Scores in San Francisco: The scores, address(zipcode)
+\item Others about neighborhood: area crimal rate, housing price.
+\end{enumerate}
+
+
+
+\end{document}
