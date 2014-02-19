@@ -24,22 +24,34 @@ This is a dataset provided by the San Francisco of Department of Public Health a
 With Yelp API, we can get the consumers' reviews of those restaurants listed in the dataset above. Moreover, we can get some details about the restaurants including price, utilities(ex: Wi-Fi), etc.. 
 
 \subsection{Others}
-More information about the area (by zip code) including average housing price, criminal rate, etc..
+More information about the neighborhood (by zip code) including average housing price, criminal rate, etc..
 
 \section{Overall Research Questions}
 
 \begin{enumerate}
   \item Is there any relationship(positive or negative) between the restaurant scores by Health Department and consumers' preferences on Yelp? Also, do they have  the same distribution?
   \item How does location influence on restaurants' score?
+  \item How do other criteria effect on restaurant evaluation? 
 \end{enumerate}
 
-\section{Approach}
-We are going to use Chi-Squared Test and Linear Regression Model to exam the relation between two kinds of scores. For the model of restaurant location, we will try some General Lineal Models like Logistic Model.
+\section{Approaches}
+To answer our research questions, we are going to build a model to evaluate restaurants. There are few methods we wll use:
+\begin{enumerate}
+\item Linear Regression: We set the customers review score on Yelp as the response variable, and explanatory variables are restaurant score by Public Health Department, area crimal rate, housing price, numbers of reviews, texts in reviews, wifi, price rate, hours, take credit card or not.
+\item Clustering: Use the same variables as above. 
+\item RFM Model: apply the RFM Model to analysis customers' reviews on yelp. The elements we will use are: 
+\begin{itemize}
+\item Recency - How recently did the customer post review?
+\item Frequency - How often do they post?
+\item Monetary Value - How many texts in reviews?
+\end{itemize}
+\end{enumerate}
 
 \section{Anticipated Results}
 \begin{enumerate}
   \item Those two scores might have positive relationship, but might not have same distribution.
   \item We believe that locations have good influence on restaurants. So maybe we could build a food map recommending nice restaurants with both high ratings on Yelp and nice, clean environment. 
+ 
 \end{enumerate}
 
 
